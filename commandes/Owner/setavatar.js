@@ -13,16 +13,16 @@ if(!authorized.includes(message.author.id)) return message.lineReply(`${emotes.g
     if(message.attachments.size > 0) { 
     message.attachments.forEach(attachment => {
         client.user.setAvatar(attachment.url)
-        .then(u => message.channel.send(`<:yes:845285875466371073> ${message.author}, Vous avez changé la photo de profil de votre bot.`))
+        .then(u => message.channel.send(`<a:797855362694774804:891459284183941170> ${message.author}, Vous avez changé la photo de profil de votre bot.`))
         .catch(e => { return message.channel.send(`<:no:845285837259931697> Une erreur est survenue. \n \` Plus d'informations:\`  \`🔻\` \`\`\`${e}\`\`\``); });
     });
     } else if (args.length) {
         let str_content = args.join(" ")
         client.user.setAvatar(str_content)
-        .then(u => message.reply(`<:yes:845285875466371073> Vous avez changé la photo de profil de votre bot.`))
-        .catch(e => { return message.channel.send(`<:no:845285837259931697> Une erreur est survenue. \n \`Plus d'informations:\`  \`🔻\` \`\`\`${e}\`\`\``); });
+        .then(u => message.reply(`<a:797855362694774804:891459284183941170> Vous avez changé la photo de profil de votre bot.`))
+        .catch(e => { return message.channel.send(` <a:865963806483808256:896694904019894282> Une erreur est survenue. \n \`Plus d'informations:\`  \`🔻\` \`\`\`${e}\`\`\``); });
     } else {
-        message.channel.send(`<:no:845285837259931697> Veuillez mettre sois une image sois un lien`);
+        message.channel.send(` <a:865963806483808256:896694904019894282> Veuillez mettre sois une image sois un lien`);
     }
 };
 module.exports.help = {

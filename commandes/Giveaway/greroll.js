@@ -11,13 +11,13 @@ module.exports.run = async (client, message, args) => {
 
     if(!args.lenght > 0) {
 message.channel.messages.fetch(db.giveaway.last).then(m => {
-    if(!m) return message.channel.send(`<:no:845285837259931697> Le dernier giveaway n'a pas été trouvé, essayez \`&greroll <message id>\``);
+    if(!m) return message.channel.send(`<a:865963806483808256:896694904019894282> Le dernier giveaway n'a pas été trouvé, essayez \`&greroll <message id>\``);
     winner = m.reactions.cache.get("🎉").users.cache.filter((u) => !u.bot).random()
     message.channel.send(`:tada: Le nouveau gagnant est ${winner}! Félicitations!`)
 })
     } else {
 message.channel.messages.fetch(args[0]).then(m => {
-    if(!m) return message.channel.send(`<:no:845285837259931697> Le dernier giveaway n'a pas été trouvé, essayez \`&greroll <message id>\``);
+    if(!m) return message.channel.send(`<a:865963806483808256:896694904019894282> Le dernier giveaway n'a pas été trouvé, essayez \`&greroll <message id>\``);
     winner = m.reactions.cache.get("🎉").users.cache.filter((u) => !u.bot).random()
     message.channel.send(`:tada: Le nouveau gagnant est ${winner}! Félicitations!`)
 })

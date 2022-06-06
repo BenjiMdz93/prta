@@ -7,7 +7,7 @@ module.exports.run = async (client, message, args) => {
 
 const Embed = new MessageEmbed()
 .setAuthor(message.author.username, message.author.avatarURL({dynamic: true}))
-.setTitle("**<a:Loading:850928872757002251> Temps de réponse**")
+.setTitle("**<a:5f96b13bdc594edf89754f99d99b6791:892035860982288514>Temps de réponse**")
 .addField('> **Temps de réponse du bot**' , `${client.ws.ping}ms`)
 .setFooter(client.user.username,client.user.displayAvatarURL({dynamic : true }))
 .setTimestamp()  

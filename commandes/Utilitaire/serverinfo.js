@@ -71,11 +71,11 @@ module.exports.run = async (client, message, args) => {
   const embed = new Discord.MessageEmbed()
   .setColor(db.color)
   .setAuthor(message.author.username , message.author.displayAvatarURL({dynamic: true}))
-  .setTitle(`<a:exclame:845266636910886912> Information du serveur ${message.guild.name}`)
+  .setTitle(`<a:680696347577286656:891778449507766282> Information du serveur ${message.guild.name}`)
   .setThumbnail(message.guild.iconURL({ dynamic: true }))
   .addFields(
       {
-          name: "Créateur <:Couronne:845266613413871667>",
+          name: "Créateur <a:867324413267542026:892078131765190686>",
           value: `<@${message.guild.ownerID}>`,
           inline: true
       },
@@ -85,30 +85,30 @@ module.exports.run = async (client, message, args) => {
           inline: true
       },
       {
-          name: `Vérifié <:yes:845285875466371073>`,
+          name: `Vérifié <:8759326243743580261:897868973251653632> `,
           value: message.guild.verified ? 'Le serveur est vérifié' : `Le serveur n’est pas vérifié`,
           inline: true
       },
   )
 
   .addField('Presence', [
-    `<:online:845266651196555294> ${online.size}`,
-    `<:idle:845281728729055242> ${idle.size}`,
-    `<:dnd:845281727735136286> ${dnd.size}`,
-    `<:offline:845281721855246366> ${offline.size}`,
+    `<:IconStatusOnline:897531985579372574> ${online.size}`,
+    `<:IconStatusIdle:897532002960543824> ${idle.size}`,
+    `<:IconStatusDND:897532022938021930> ${dnd.size}`,
+    `<:IconStatusOffline:897532045801177158> ${offline.size}`,
     `\u200b`
     ], true)
     .addField('Stats',[
-    ` <:members:845282697441050644> **Membres** ${message.guild.memberCount}`,
-    `<a:IconClientFriends:849217386098720768> **Humains** ${membersGuild.filter(member => !member.user.bot).size}`,
-    `<:bot:845281752218075206> **Bots** ${membersGuild.filter(member => member.user.bot).size}`,
+    ` <:6055blurpleinvite:898080548382212146> **Membres** ${message.guild.memberCount}`,
+    `<:5864blurplesearch:898080548256354314>  **Humains** ${membersGuild.filter(member => !member.user.bot).size}`,
+    `<:769926156098076702:891458085573505114> **Bots** ${membersGuild.filter(member => member.user.bot).size}`,
     `\u200b`
     ], true)
     .addField('Serveur',[
-        `<:channel:845282562216558642> **Salons Textuels** ${channelsGuild.filter(channel => channel.type === 'text').size}`,
-        `<:voice:845282579048824872> **Salons Vocaux** ${channelsGuild.filter(channel => channel.type === 'voice').size}`,
-        `<:role:845266662977962005> **Roles**  ${rolesGuild.length}`, 
-        `<:doc:845281719694262292> **Emojis** ${emojisGuild.size}`,
+        `<:5702blurpletextchannel:898080548138930206>  **Salons Textuels** ${channelsGuild.filter(channel => channel.type === 'text').size}`,
+        `<:3527blurplevoicechannel:898080547891453973> **Salons Vocaux** ${channelsGuild.filter(channel => channel.type === 'voice').size}`,
+        `<:875932385764581386:897868973104857099>**Roles**  ${rolesGuild.length}`, 
+        `<:1658partnerwaitapproval:897532305864814602> **Emojis** ${emojisGuild.size}`,
         `\u200b`
     ], true )
     .addFields(

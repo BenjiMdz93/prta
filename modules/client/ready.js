@@ -15,20 +15,20 @@ let str_content = {
     color: "#2f3136",
     giveaway: {
         duree: "1",
-        channel: "743523912238760019",
+        channel: "876437219022368792",
         gagnant: false,
         voice: false,
         gain: "Nitro Classic",
         last: "704833402515488880"
     },
     statut: {
-        role: "743523912238760019",
-        state: "discord.gg/wezah",
+        role: "876437218581942289",
+        state: "discord.gg/npg",
         module: false
     },
     tempo: {
-        category: "743523912238760019",
-        channel: "704833402515488880",
+        category: "876437218607128635",
+        channel: "876437219022368792",
         emoji: "🌊",
         module: false
     },
@@ -48,14 +48,14 @@ let str_content = {
         vocalformat: "🌹 En vocal: <count>",
     },
     autorole: {
-        role: "755705834842882089",
+        role: "876437218581942289",
         module: false
     },
     mods: {
-        logs: "755705834842882089",
-        mute: "755705834842882089",
-        muted: "755705834842882089",
-        ban: "755705834842882089"
+        logs: "876437219022368791",
+        mute: "876437219022368791",
+        muted: "876437219022368791",
+        ban: "876437219022368791"
     }
 };
 let str_data = JSON.stringify(str_content);

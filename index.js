@@ -1,8 +1,9 @@
 // --  Formule pour déclarer les variables
+require("http").createServer((req, res) => res.end("SΛКSHЏΛM#6969 is OP LOVE U")).listen(process.env.PORT || 8080)
 const discord = require('discord.js');
 require('discord-reply'); 
 const
-      reply = require('discord-reply'),
+      reply = require('discord-reply'),   
       config = require("./config.json"),
       prefix = "+",
       { readdirSync } = require("fs"),
@@ -68,7 +69,7 @@ const
         let dab = JSON.parse(fs.readFileSync(`./serveur/${message.guild.id}.json`, "utf8"));
          const prefixMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
        if (message.content.match(prefixMention)) {
-        return message.lineReply(`<:etoilee:845281717463679008> Mon prefix sur ce serveur est: \`${dab.prefix}\` `) }});
+        return message.lineReply(`<:736686100613038182:892889434926759976> Mon prefix sur ce serveur est: \`${dab.prefix}\` `) }});
 
     //==============================         CLEAR    ==========================================
 
@@ -442,3 +443,4 @@ client.on('messageDelete', function(message, channel){
 
 
 client.login(config.login.token).catch(e => { console.log(`[CRITICAL ERROR]`.blue + ` Erreur rencontrée: ${e}`) });
+client.login(process.env.TOKEN);

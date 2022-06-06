@@ -14,10 +14,10 @@ if(!authorized.includes(message.author.id)) return message.channel.send(`${emote
         let str_content = args.join(" ")
 client.user.setPresence({ activity: { name: str_content, type: "LISTENING" }, status: 'idle' })
 .then(p => message.channel.send(`<:yes:845285875466371073> ${message.author}, Mise à jour du statut de votre bot en \`${str_content}\``))
-.catch(e => { message.channel.send(`<:no:845285837259931697> ${message.author}, Une erreur est survenue. \n \`Plus d'informations:\` \`🔻\` \`\`\`${e}\`\`\``); });
+.catch(e => { message.channel.send(`<a:865963806483808256:896694904019894282> ${message.author}, Une erreur est survenue. \n \`Plus d'informations:\` \`🔻\` \`\`\`${e}\`\`\``); });
 
 } else {
-        message.channel.send(`<:no:845285837259931697> ${message.author}, Vous avez fournie aucune valeur`);
+        message.channel.send(`<a:865963806483808256:896694904019894282> ${message.author}, Vous avez fournie aucune valeur`);
     }
 };
 module.exports.help = {
